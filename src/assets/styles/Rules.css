@@ -1,0 +1,21 @@
+.container_rules button {
+  width: 135px;
+  height: 45px;
+  border: 2px solid var(--HeaderOutline);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-top: 50px;
+  animation: box-shadow 3s ease-in-out;
+  background-color: transparent;
+}
+
+.container_rules h3 {
+  transform: translateY(5px);
+}
+
+.container_rules button:hover {
+  box-shadow: 5px 6px 3px rgba(0, 0, 0, 0.2);
+}

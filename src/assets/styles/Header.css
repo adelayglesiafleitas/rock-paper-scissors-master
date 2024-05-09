@@ -1,0 +1,45 @@
+.container_header {
+  width: 320px;
+  height: 104px;
+  border: solid 3px var(--HeaderOutline);
+  border-radius: 10px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.selection {
+  margin-left: 21px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  color: white;
+}
+h2 {
+  margin-top: -5px;
+  font-size: 19px;
+}
+.score {
+  width: 86px;
+  height: 78px;
+  background-color: white;
+  border-radius: 10px;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+}
+.score p {
+  color: var(--ScoreText);
+  font-size: 12px;
+  margin-top: 15px;
+  margin-bottom: -15px;
+}
+.score h5 {
+  color: var(--DarkText);
+  font-size: 40px;
+  margin-bottom: 15px;
+  margin-top: 8px;
+}
