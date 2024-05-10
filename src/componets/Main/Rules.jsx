@@ -1,13 +1,39 @@
 import "../../assets/styles/Rules.css";
 
-const Rules = () => {
+const Rules = ({ stateGame, setDisplay, display, setWindowsRule }) => {
+  console.log(display);
   return (
     <>
-      <section>
-        <button>
-          <h3 className="barlow-semi-condensed-semibold">RULES</h3>
+      <div
+        className="container_text"
+        style={{ opacity: display ? "100%" : "0%" }}
+      >
+        <h2 className="barlow-semi-condensed-bold">
+          {stateGame === "lost"
+            ? "YOU LOSE"
+            : stateGame === "win"
+            ? "YOU WIN"
+            : "A TIE"}
+        </h2>
+        <button
+          className="barlow-semi-condensed-bold"
+          onClick={() => setDisplay(0)}
+        >
+          PLAY AGAIN
         </button>
-      </section>
+      </div>
+      <div>
+        <button>
+          <h3
+            className="barlow-semi-condensed-semibold"
+            onClick={() => {
+              setWindowsRule(false);
+            }}
+          >
+            RULES
+          </h3>
+        </button>
+      </div>
     </>
   );
 };

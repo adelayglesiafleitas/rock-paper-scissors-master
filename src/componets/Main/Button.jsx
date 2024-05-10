@@ -1,4 +1,3 @@
-import React from "react";
 import "../../assets/styles/Button.css";
 
 const Button = ({
@@ -15,10 +14,12 @@ const Button = ({
   setPcSelection,
   setDisplay,
 }) => {
+  //escoje un numero aleatorio
   const numberRandom = () => {
     return Math.floor(Math.random() * 11);
   };
 
+  //escoge randown la seleccion de la pc
   const chousePc = () => {
     const Pc = numberRandom();
     if (Pc >= 3.33 && Pc < 6.7) {
@@ -33,6 +34,7 @@ const Button = ({
     }
   };
 
+  //logica del juego
   const game = (tipe) => {
     const Pc = chousePc();
 

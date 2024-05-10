@@ -14,9 +14,11 @@ const Main = ({
   setStateGame,
   pcSelection,
   setPcSelection,
+  setWindowsRule,
 }) => {
   const [display, setDisplay] = useState(0);
 
+  //definicion del style usado para los 3 tipos de botones y un 4 q uso para la ventana q aparece solo para el rock al estar en un grip debo configurarlo de nuevo
   const stylePaper = {
     gridColumn: "1 / 2",
     gridRow: "1 / 2",
@@ -40,8 +42,6 @@ const Main = ({
       "radial-gradient(at center, hsl(39, 89%, 49%) 0%, hsl(40, 84%, 53%) 100%)",
   };
   const styleRock2 = {
-    gridColumn: "2 / 3",
-    gridRow: "2 / 3",
     backgroundImage:
       "radial-gradient(at center, hsl(39, 89%, 49%) 0%, hsl(40, 84%, 53%) 100%)",
   };
@@ -129,26 +129,15 @@ const Main = ({
                 </h2>
               </section>
             </div>
-            <section className="container_text">
-              <h2 className="barlow-semi-condensed-bold">
-                {stateGame === "lost"
-                  ? "YOU LOSE"
-                  : stateGame === "win"
-                  ? "YOU WIN"
-                  : "A TIE"}
-              </h2>
-              <button
-                className="barlow-semi-condensed-bold"
-                onClick={() => setDisplay(0)}
-              >
-                PLAY AGAIN
-              </button>
-            </section>
           </section>
         )}
-
         <section className="container_rules">
-          <Rules />
+          <Rules
+            stateGame={stateGame}
+            setDisplay={setDisplay}
+            display={display}
+            setWindowsRule={setWindowsRule}
+          />
         </section>
       </main>
     </>

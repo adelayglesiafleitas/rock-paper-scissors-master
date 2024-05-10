@@ -7,15 +7,42 @@
   align-items: center;
   justify-content: center;
   color: white;
-  margin-top: 50px;
+  cursor: pointer;
   animation: box-shadow 3s ease-in-out;
   background-color: transparent;
 }
 
-.container_rules h3 {
-  transform: translateY(5px);
-}
-
 .container_rules button:hover {
   box-shadow: 5px 6px 3px rgba(0, 0, 0, 0.2);
+}
+.container_text {
+  color: white;
+  width: 320px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container_text h2 {
+  font-size: 35px;
+  transform: translateY(-50px);
+}
+
+.container_text button {
+  width: 225px;
+  height: 56px;
+  border-radius: 10px;
+  color: gray;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+}
+
+.container__text_rules {
+  display: flex;
 }
