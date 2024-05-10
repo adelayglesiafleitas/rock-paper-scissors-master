@@ -8,7 +8,7 @@ const Rules = ({ stateGame, setDisplay, display, setWindowsRule }) => {
         className="container_text"
         style={{ opacity: display ? "100%" : "0%" }}
       >
-        <h2 className="barlow-semi-condensed-bold">
+        <h2 className="barlow-semi-condensed-bold ">
           {stateGame === "lost"
             ? "YOU LOSE"
             : stateGame === "win"

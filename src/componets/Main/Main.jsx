@@ -48,7 +48,7 @@ const Main = ({
 
   return (
     <>
-      <main className="container_main">
+      <main className="container_main animate__animated animate__rubberBand">
         {display == 0 ? (
           <section className="container_bottons">
             <Button

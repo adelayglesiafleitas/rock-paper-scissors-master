@@ -4,7 +4,7 @@ import "../../assets/styles/WindowsRules.css";
 const WindowsRule = ({ setWindowsRule }) => {
   return (
     <>
-      <section className="container__rules">
+      <section className="container__rules animate__animated animate__pulse">
         <h2 className="barlow-semi-condensed-semibold">RULES</h2>
         <img src={Rules} alt="" />
         <button

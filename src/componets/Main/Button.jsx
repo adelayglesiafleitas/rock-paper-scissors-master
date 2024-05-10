@@ -80,7 +80,7 @@ const Button = ({
 
   return (
     <>
-      <section className="container_button" style={style}>
+      <section className="container_button " style={style}>
         <button className="button" onClick={() => game(tipe)}>
           <img src={icon} alt="icon" />
         </button>

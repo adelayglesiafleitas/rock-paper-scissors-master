@@ -2,7 +2,7 @@ import "../../assets/styles/Header.css";
 const Header = ({ score, selection }) => {
   return (
     <>
-      <header className="container_header">
+      <header className="container_header animate__animated animate__jackInTheBox">
         <section className="selection barlow-semi-condensed-semibold">
           <h2
             style={{
