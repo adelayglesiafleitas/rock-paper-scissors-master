@@ -8,7 +8,10 @@ const Rules = ({ stateGame, setDisplay, display, setWindowsRule }) => {
         className="container_text"
         style={{ opacity: display ? "100%" : "0%" }}
       >
-        <h2 className="barlow-semi-condensed-bold ">
+        <h2
+          className="barlow-semi-condensed-bold "
+          style={{ transform: display == 0 ? "translatex(-1550px)" : "" }}
+        >
           {stateGame === "lost"
             ? "YOU LOSE"
             : stateGame === "win"
@@ -17,15 +20,16 @@ const Rules = ({ stateGame, setDisplay, display, setWindowsRule }) => {
         </h2>
         <button
           className="barlow-semi-condensed-bold"
-          onClick={() => setDisplay(0)}
+          style={{ transform: display == 0 ? "translatex(-1550px)" : "" }}
+          onClick={() => (display == 1 ? setDisplay(0) : "")}
         >
           PLAY AGAIN
         </button>
       </div>
-      <div>
+      <div className="rules_button">
         <button>
           <h3
-            className="barlow-semi-condensed-semibold"
+            className="barlow-semi-condensed-semibold rules_button"
             onClick={() => {
               setWindowsRule(false);
             }}

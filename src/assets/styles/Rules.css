@@ -46,3 +46,20 @@
 .container__text_rules {
   display: flex;
 }
+/*.................(>1366px)......................*/
+@media only screen and (min-width: 1366px) {
+  .container_text h2 {
+    transform: translate(-280px, -90px);
+    font-size: 40px;
+    z-index: -1;
+  }
+  .container_text button {
+    width: 225px;
+    height: 56px;
+    transform: translate(-280px, -90px);
+    z-index: -1;
+  }
+  .rules_button button {
+    transform: translate(100px, 0);
+  }
+}

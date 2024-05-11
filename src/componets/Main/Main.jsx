@@ -98,7 +98,7 @@ const Main = ({
           <section className="container_game">
             <div className="container_section_game">
               {" "}
-              <section className="container_game_gamer">
+              <section className="container_game_gamer button_left">
                 {selection === "scissors" ? (
                   <Button
                     style={styleScissors}
@@ -112,7 +112,7 @@ const Main = ({
                 )}
                 <h2 className="barlow-semi-condensed-semibold">YOU PICKED</h2>
               </section>
-              <section className="container_game_gamer">
+              <section className="container_game_gamer button_rigth">
                 {pcSelection === "scissors" ? (
                   <Button
                     style={styleScissors}

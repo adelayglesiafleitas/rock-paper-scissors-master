@@ -22,7 +22,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
- /* border: 4px solid wheat;*/
+  /* border: 4px solid wheat;*/
   flex-direction: column;
 }
 
@@ -41,10 +41,9 @@
   flex-direction: row;
   margin-top: 100px;
   width: 320px;
-  height: 288px; 
+  height: 288px;
   justify-content: center;
   align-items: center;
-  
 }
 .container_game_gamer {
   display: flex;
@@ -58,4 +57,34 @@
 }
 .container_section_game {
   display: flex;
+}
+/*.................(>1366px)......................*/
+@media only screen and (min-width: 1366px) {
+  .container_main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    width: 710px;
+    height: 518px;
+  }
+  .container_bottons {
+    scale: 1.5;
+  }
+  .container_rules {
+    transform: translatex(250px);
+
+  }
+  .container_game {
+    scale: 1.5;
+    transform: translateY(50px);
+  }
+  .button_left {
+    transform: translate(-80px, -52px);
+  }
+  .button_rigth {
+    transform: translate(110px, -52px);
+    
+  }
 }

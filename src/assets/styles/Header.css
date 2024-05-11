@@ -43,3 +43,28 @@ h2 {
   margin-bottom: 15px;
   margin-top: 8px;
 }
+/*.................(>1366px)......................*/
+@media only screen and (min-width: 1366px) {
+  .container_header {
+    width: 710px;
+    height: 168px;
+  }
+  .score {
+    width: 158px;
+    height: 120px;
+  }
+  h2 {
+    margin-top: -5px;
+    font-size: 34px;
+  }
+  .score h5 {
+    color: var(--DarkText);
+    font-size: 65px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    transform: translateY(5px);
+  }
+  .score p {
+    font-size: 15px;
+  }
+}
