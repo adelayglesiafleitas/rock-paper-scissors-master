@@ -32,14 +32,14 @@ const Main = ({
     gridRow: "1 / 2",
     transform: "translateX(10px)",
     backgroundImage:
-      "radial-gradient(at center, hsl(349, 71%, 52%) 0%, hsl(349, 70%, 56%) 100%)",
+      "radial-gradient(at center, hsl(39, 89%, 49%) 0%, hsl(40, 84%, 53%) 100%)",
   };
   const styleRock = {
     gridColumn: "2 / 3",
     gridRow: "2 / 3",
     transform: "translateX(-70px)",
     backgroundImage:
-      "radial-gradient(at center, hsl(39, 89%, 49%) 0%, hsl(40, 84%, 53%) 100%)",
+      "radial-gradient(at center, hsl(349, 71%, 52%) 0%, hsl(349, 70%, 56%) 100%)",
   };
   const styleRock2 = {
     backgroundImage:
