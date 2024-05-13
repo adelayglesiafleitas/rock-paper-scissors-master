@@ -43,7 +43,7 @@ const Main = ({
   };
   const styleRock2 = {
     backgroundImage:
-      "radial-gradient(at center, hsl(39, 89%, 49%) 0%, hsl(40, 84%, 53%) 100%)",
+      "radial-gradient(at center, hsl(349, 71%, 52%) 0%, hsl(349, 70%, 56%) 100%)",
   };
 
   return (
